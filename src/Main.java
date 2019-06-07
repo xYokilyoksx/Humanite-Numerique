@@ -16,6 +16,7 @@ public class Main {
     public static void main (String[] args){
 
 
+
         File fileTentatives = new File("Data\\exo31Tentatives.txt");
         File fileReussites = new File("Data\\exo31Reussites.txt");
         DataLoader n = new DataLoader(fileTentatives,fileReussites);
@@ -32,6 +33,6 @@ public class Main {
             example.setLocationRelativeTo(null);
             example.setVisible(true);
             example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+        System.out.println("test");
     }
 }
