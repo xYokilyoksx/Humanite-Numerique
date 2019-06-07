@@ -1,0 +1,453 @@
+
+Enseignant 2019-01-31 16:51:53 
+ probaClasses<-function(data){
+vclasses<-data[,ncol(data)]
+return(table(vclasses)/nrow(data))
+}
+Sosthene LEROY 2019-02-06 16:00:42 
+ probaClasses = function(data){
+    probas = table(data[,ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 18:24:06 
+ probaClasses = function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 18:27:46 
+ probaClasses = function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 19:21:27 
+ probaClasses = function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 19:21:45 
+ probaClasses = function(data)table(data[,ncol(data)])/nrow(data)
+Sosthene LEROY 2019-02-06 19:42:46 
+ probaClasses = function(data){
+  return(table(data[,ncol(data)]) / nrow(data))
+}
+Nicolas ZHOU 2019-02-08 11:55:54 
+ probaClasses<-function(data){
+    return (table(data[,ncol(data)])/nrow(data))
+}
+Tom RIBARDIERE 2019-02-08 12:00:18 
+ probaClasses <- function(data){
+return( table( data[,ncol(data)])/nrow(data) )
+}
+Tom RIBARDIERE 2019-02-08 12:01:26 
+ probaClasses <- function(data){
+return( table( data[,ncol(data)])/nrow(data) )
+}
+Theodore GRASTEAU 2019-02-08 12:06:29 
+ probaClasses = function(data){
+return(  table(data[,ncol(data)] )/nrow(data))
+}
+Matthieu DE VUYST 2019-02-08 12:35:44 
+ probaClasses <- function(data){return(table(data[,ncol(data)])/nrow(data))}
+Erik VIENNE 2019-02-08 13:04:24 
+ probaClasses = function(data){
+return (table(data[,ncol(data)])/nrow(data))
+}
+Axel JEAN-FRANCOIS 2019-02-08 13:08:51 
+ probaClasses <- function(data){return(table(data[,ncol(data)])/nrow(data))}
+Remi RIANDIERE 2019-02-08 13:29:58 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+Aurelien DESPREZ 2019-02-08 13:58:55 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)])/nrow(data))
+}
+Remi RIANDIERE 2019-02-08 14:04:16 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+
+Farnoud KHABOSHAN 2019-02-08 15:22:59 
+ probaClasses <- function(data){
+    return (table((data)[,ncol(data)])/nrow(data))
+}
+Erwan AUBRY 2019-02-08 16:54:45 
+ probaClasses = function(x) 
+{
+    tab = table(x[,ncol(x)])
+    val = tab / nrow(x)
+    val
+}
+Valentin CIZEAU 2019-02-08 16:55:26 
+ probaClasses = function(data){
+    return (table(data[, ncol(data)])/nrow(data))
+}
+Valentin CIZEAU 2019-02-08 17:10:12 
+ probaClasses = function(data){
+    table(data[, ncol(data)])/nrow(data)
+}
+Aurelien DESPREZ 2019-02-08 17:20:17 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)])/nrow(data))
+}
+Theodore GRASTEAU 2019-02-08 18:35:50 
+ probaClasses = function(data){
+return(  table(data[,ncol(data)] )/nrow(data))
+}
+
+  probaAttValC <- function(att,val,c,data){
+      nTotalRow <- nrow(data)
+      nRowMatching <- nrow(subset(data, data[,att]==val & data[,ncol(data)]==c)) / nTotalRow
+      nRowClass <- nrow(subset(data, data[,ncol(data)]==c)) / nTotalRow
+
+      return(nRowMatching/nRowClass)
+  }
+Theodore GRASTEAU 2019-02-08 18:36:54 
+ probaClasses = function(data){
+return(  table(data[,ncol(data)] )/nrow(data))
+}
+
+Lucas MANGIN 2019-02-08 18:49:38 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))  
+}
+Theodore GRASTEAU 2019-02-08 19:26:54 
+ probaClasses = function(data){
+return(  table(data[,ncol(data)] )/nrow(data))
+}
+Theodore GRASTEAU 2019-02-08 19:29:59 
+ probaClasses = function(data){
+return(  table(data[,ncol(data)] )/nrow(data))
+}
+Romain HERAULT 2019-02-08 19:35:28 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data));
+}
+Ladislas WALCAK 2019-02-08 20:25:07 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Florian DUBOIS 2019-02-08 20:44:52 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data));
+}
+
+Edwin CHARLOTTE 2019-02-08 20:49:54 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Alexis DUPRE 2019-02-08 21:41:04 
+ probaClasses <- function(data){ return (table(data[,ncol(data)])/nrow(data))}
+Edwin CHARLOTTE 2019-02-08 22:17:53 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Jordan LOPES 2019-02-09 13:44:18 
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data[, ncol(data)]);
+	return(freq/lignes);
+}
+Jordan LOPES 2019-02-09 14:08:50 
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data[, ncol(data)]);
+	return(freq/lignes);
+}
+Edwin CHARLOTTE 2019-02-09 14:21:23 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Erwan AUBRY 2019-02-09 14:28:26 
+ probaClasses = function(x) 
+{
+    tab = table(x[,ncol(x)])
+    val = tab / nrow(x)
+    val
+}
+Edwin CHARLOTTE 2019-02-09 14:28:58 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Jordan LOPES 2019-02-09 14:43:31 
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data[, ncol(data)]);
+	return(freq/lignes);
+}
+Erwan AUBRY 2019-02-09 15:31:59 
+ probaClasses = function(x) 
+{
+    tab = table(x[,ncol(x)])
+    val = tab / nrow(x)
+    val
+}
+Nicolas ZHOU 2019-02-09 18:16:13 
+ probaClasses<-function(data){
+    return (table(data[,ncol(data)])/nrow(data))
+}
+Nicolas ZHOU 2019-02-09 18:16:16 
+ probaClasses<-function(data){
+    return (table(data[,ncol(data)])/nrow(data))
+}
+Lucas MANGIN 2019-02-10 13:26:57 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))  
+}
+
+Edwin CHARLOTTE 2019-02-10 14:24:56 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Edwin CHARLOTTE 2019-02-10 14:59:35 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Edwin CHARLOTTE 2019-02-10 15:25:16 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Adrien FOUCAULT 2019-02-10 15:25:44 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-10 15:39:14 
+ probaClasses <- function(data){
+    return (table((data)[,ncol(data)])/nrow(data))
+}
+Edwin CHARLOTTE 2019-02-10 15:45:54 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Adrien FOUCAULT 2019-02-10 16:10:30 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Edwin CHARLOTTE 2019-02-10 16:58:56 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Edwin CHARLOTTE 2019-02-10 17:43:44 
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / nrow(data))}
+Loris PERDEREAU 2019-02-10 18:56:31 
+ probaClasses <- function(data)
+{
+  return(table(data[,ncol(data)])/nrow(data))
+}
+
+Ladislas WALCAK 2019-02-10 19:36:29 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Adrien FOUCAULT 2019-02-10 20:15:20 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Leo ROUILLARD 2019-02-10 20:23:54 
+ probaClasses <- function(data) {
+return(table(data[,ncol(data)])/nrow(data))
+}
+
+Michael ABID 2019-02-10 20:25:54 
+ probaClasses = function(data){
+ return(table(data[,ncol(data)] )/nrow(data))
+}
+
+Michael ABID 2019-02-10 20:25:55 
+ probaClasses = function(data){
+ return(table(data[,ncol(data)] )/nrow(data))
+}
+
+Ladislas WALCAK 2019-02-10 20:50:49 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Ladislas WALCAK 2019-02-10 21:15:01 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Loris PERDEREAU 2019-02-10 21:25:09 
+ probaClasses <- function(data)
+{
+  return( table(data[,ncol(data)])/nrow(data) )
+}
+Lucas MIRLOUP 2019-02-10 21:57:35 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Ladislas WALCAK 2019-02-10 22:31:36 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Baptiste GARRIDO 2019-02-10 22:43:39 
+ probaClasses <- function(data){return(table(data[,ncol(data)])/nrow(data))}
+Ladislas WALCAK 2019-02-10 23:12:45 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+Remi RIANDIERE 2019-02-11 00:54:18 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+
+Axel JEAN-FRANCOIS 2019-02-11 10:42:00 
+ probaClasses <- function(data){return(table(data[,ncol(data)])/nrow(data))}
+Nolan MARTINS 2019-02-11 12:17:08 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Thomas QUETIER 2019-02-11 12:58:17 
+ probaClasses = function(data)
+{
+  return( table(data[,ncol(data)])/nrow(data) )
+}
+Damien MOLENAT 2019-02-11 13:17:39 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Alexis GREGOIRE 2019-02-11 13:21:29 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Erik VIENNE 2019-02-11 13:53:44 
+ probaClasses = function(data){
+return (table(data[,ncol(data)])/nrow(data))
+}
+
+Aurelien DESPREZ 2019-02-11 14:03:55 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)])/nrow(data))
+}
+Etienne FOUQUET 2019-02-11 14:06:52 
+ probaClasses<-function(data){
+return (table(data[,ncol(data)])/nrow(data))
+}
+Lucas MORET-BAILLY 2019-02-11 14:13:04 
+ probaClasses <- function(data)
+{
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Antonin PANDION 2019-02-11 14:41:14 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Antonin PANDION 2019-02-11 14:41:17 
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)])/nrow(data))
+}
+Benjamin SAINT-MARS 2019-02-11 16:17:57 
+ probaClasses=function(data)table(data[,ncol(data)])/nrow(data)
+Benjamin SAINT-MARS 2019-02-11 16:32:19 
+ probaClasses=function(data)
+{
+return (table(data[,ncol(data)])/nrow(data))
+}
+Benjamin SAINT-MARS 2019-02-11 16:32:27 
+ probaClasses=function(data)
+{
+return (table(data[,ncol(data)])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-11 16:58:22 
+ probaClasses <- function(data){
+	return(table(data[,ncol(data)])/nrow(data))
+}
+Etienne FOUQUET 2019-02-11 17:11:13 
+ probaClasses<-function(data){
+return (table(data[,ncol(data)])/nrow(data))
+}
+Ladislas WALCAK 2019-02-11 17:28:16 
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)]) / nrow(data)) }
+
+Nolan MARTINS 2019-02-11 17:33:22 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+Nelson RABOTTIN 2019-02-11 17:47:35 
+ probaClasses = function(data){
+	return (table(data[, ncol(data)])/nrow(data))
+}
+Etienne FOUQUET 2019-02-11 18:08:40 
+ probaClasses<-function(data){
+return (table(data[,ncol(data)])/nrow(data))
+}
+Liam DEMAREST 2019-02-11 18:56:03 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Emilien COCHEREL 2019-02-11 20:15:07 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Quentin BERNARD 2019-02-11 20:16:34 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Valentin SAVREUX 2019-02-11 20:23:42 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data));
+}
+Jules MARTIN 2019-02-11 20:33:19 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Robin BOSCARDIN 2019-02-11 20:33:41 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Alain BARA 2019-02-11 20:39:05 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Alain BARA 2019-02-11 20:39:06 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Alain BARA 2019-02-11 20:39:08 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Alain BARA 2019-02-11 20:39:10 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Corentin HERVOCHON 2019-02-11 20:40:47 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Jean EMPEREUR 2019-02-11 21:28:19 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Corentin HERVOCHON 2019-02-11 21:33:11 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Maxime LORNE 2019-02-11 21:48:09 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Loris PERDEREAU 2019-02-11 21:48:41 
+ probaClasses <- function(data)
+{
+  return( table(data[,ncol(data)])/nrow(data) )
+}
+Pierre-Louis BERTRAND 2019-02-11 21:55:59 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+Lucas GROSPART 2019-02-11 21:56:38 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data));
+}
+Luka MERCIER 2019-02-11 22:34:43 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Luka MERCIER 2019-02-11 22:35:13 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(a, data){a/nrow(data)}, data=data)))
+}
+Luka MERCIER 2019-02-11 22:35:25 
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(a, data){a/nrow(data)}, data=data)))
+}
+Leo ROUILLARD 2019-02-11 22:40:52 
+ probaClasses <- function(data) {
+return(table(data[,ncol(data)])/nrow(data))
+}
+Pierre-Louis BERTRAND 2019-02-11 22:54:55 
+ probaClasses <- function(data){
+    return(table(data[,ncol(data)])/nrow(data))
+}
+Luka MERCIER 2019-02-11 23:24:45 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
+Luka MERCIER 2019-02-11 23:36:41 
+ probaClasses <- function(data){
+return(table(data[,ncol(data)])/nrow(data))
+}
