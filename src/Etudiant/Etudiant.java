@@ -95,7 +95,7 @@ public class Etudiant {
     public String stringWriteFile(Tentative tentative){
         String nomprenom = nomPrenom;
 
-        return nomprenom + tentative.getDateString() + " " + tentative.getHeure();
+        return nomprenom + tentative.getDateString() + " " + tentative.getHeure() + " \n" + tentative.getTentative();
     }
 
     public void writeFile() {
@@ -108,10 +108,11 @@ public class Etudiant {
             if (!file.exists()){
                 file.createNewFile();
             }
+            FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
+            bw = new BufferedWriter(fw);
             for (Tentative tentative : tentatives) {
                 String content = stringWriteFile(tentative);
-                FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
-                bw = new BufferedWriter(fw);
+
                 bw.write(content);
                 bw.newLine();
 
