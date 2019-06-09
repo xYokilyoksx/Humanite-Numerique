@@ -28,9 +28,8 @@ public class DataLoader {
 
     public void loadFileTentatives(File fileTentatives, boolean reussite){
         BufferedReader reader = null;
-        String line,date,heure,nomPrenom;
+        String line,date,heure,nomPrenom,tentative;
         Etudiant currentEtudiant;
-        String tentative;
         Vector testUnitaires = new Vector();
 
         try {
