@@ -10,6 +10,8 @@ public class Tentative implements Comparable<Tentative> {
     private String tentative;
     private LocalDateTime dateheure;
     private boolean reussite;
+    private String date;
+    private String heure;
 
     public Tentative(){}
 
@@ -18,8 +20,17 @@ public class Tentative implements Comparable<Tentative> {
         this.tentative = tentative;
         this.reussite = reussite;
         this.dateheure = LocalDateTime.parse(date+"T"+heure);
+        this.date = date;
+        this.heure = heure;
     }
 
+    public String getHeure() {
+        return heure;
+    }
+
+    public String getDateString() {
+        return date;
+    }
 
     public String getTentative() {
         return tentative;

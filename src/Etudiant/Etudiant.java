@@ -1,7 +1,13 @@
 package Etudiant;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class Etudiant {
     private String nomPrenom;
@@ -22,7 +28,7 @@ public class Etudiant {
      */
     public static int getIndexNom(ArrayList<Etudiant> etudiants, String nomPrenom){
         if(etudiants != null) {
-            for (int i = 0; i < etudiants.size(); i++) {;
+            for (int i = 0; i < etudiants.size(); i++) {
                 if (etudiants.get(i).getNomPrenom().contains(nomPrenom) || nomPrenom.contains(etudiants.get(i).getNomPrenom())) {
                     return i;
                 }
@@ -84,6 +90,43 @@ public class Etudiant {
         tostring = tostring +'}';
 
         return tostring;
+    }
+
+    public String stringWriteFile(Tentative tentative){
+        String nomprenom = nomPrenom;
+
+        return nomprenom + tentative.getDateString() + " " + tentative.getHeure();
+    }
+
+    public void writeFile() {
+        BufferedWriter bw = null;
+        try {
+
+            File file = new File("Data\\blop.txt");
+
+            //créer fichier si il existe pas
+            if (!file.exists()){
+                file.createNewFile();
+            }
+            for (Tentative tentative : tentatives) {
+                String content = stringWriteFile(tentative);
+                FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
+                bw = new BufferedWriter(fw);
+                bw.write(content);
+                bw.newLine();
+
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            try {
+                assert bw != null;
+                bw.close();
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+
+        }
     }
 
 
