@@ -12,17 +12,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DataLoader {
-    private String dateRegex = ".*([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[0-1]).*";
-    private String heureRegex = ".*(0[0-9]|1[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9]).*";
+    private static final String dateRegex = ".*([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[0-1]).*";
+    private static final String heureRegex = ".*(0[0-9]|1[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9]).*";
+
     private ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
 
     public DataLoader(File fileTentatives,File fileReussites){
 
         loadFileTentatives(fileTentatives,false);
         loadFileTentatives(fileReussites, true);
-
         sortEtudiantsByDate();
-
         Etudiant.printEtudiants(etudiants);
     }
 
