@@ -12,6 +12,7 @@ import java.util.*;
 public class Etudiant {
     private String nomPrenom;
     private ArrayList<Tentative> tentatives;
+    private static final String nomfichier = "exo31modifie.txt";
 
 
 
@@ -102,7 +103,7 @@ public class Etudiant {
         BufferedWriter bw = null;
         try {
 
-            File file = new File("Data\\blop.txt");
+            File file = new File("Data\\" + nomfichier);
 
             //créer fichier si il existe pas
             if (!file.exists()){
