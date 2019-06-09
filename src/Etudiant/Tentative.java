@@ -4,9 +4,10 @@ package Etudiant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
+import java.util.Vector;
 
 public class Tentative implements Comparable<Tentative> {
-
+    private Vector testUnitaires = new Vector();
     private String tentative;
     private LocalDateTime dateheure;
     private boolean reussite;
@@ -14,10 +15,11 @@ public class Tentative implements Comparable<Tentative> {
     public Tentative(){}
 
 
-    public Tentative(String tentative,String date,String heure,boolean reussite){
+    public Tentative(String tentative, String date, String heure, Vector testUnitaires, boolean reussite){
         this.tentative = tentative;
         this.reussite = reussite;
         this.dateheure = LocalDateTime.parse(date+"T"+heure);
+        this.testUnitaires = testUnitaires;
     }
 
 

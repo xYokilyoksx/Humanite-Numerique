@@ -7,29 +7,19 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DataLoader {
     private String dateRegex = ".*([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[0-1]).*";
     private String heureRegex = ".*(0[0-9]|1[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9]).*";
-
-    ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
-
-    public DataLoader(){}
-
-    public DataLoader(File fileTentatives){
-
-        loadFileTentatives(fileTentatives);
-
-
-        Etudiant.printEtudiants(etudiants);
-    }
+    private ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
 
     public DataLoader(File fileTentatives,File fileReussites){
 
-        loadFileTentatives(fileTentatives);
-        loadFileReussites(fileReussites);
+        loadFileTentatives(fileTentatives,false);
+        loadFileTentatives(fileReussites, true);
 
         sortEtudiantsByDate();
 
@@ -37,44 +27,46 @@ public class DataLoader {
     }
 
 
-    public void loadFileTentatives(File fileTentatives){
+    public void loadFileTentatives(File fileTentatives, boolean reussite){
         BufferedReader reader = null;
-        String line,date,heure,nom;
-        int currentStudent = 0;
-        int end = 0,i = 0,j=0;
+        String line,date,heure,nomPrenom;
+        Etudiant currentEtudiant;
         String tentative;
+        Vector testUnitaires = new Vector();
 
         try {
-
             reader = new BufferedReader(new FileReader(fileTentatives));
             line = reader.readLine();
-
 
             while(line != null){
                 if(isNewTentative(line)){
 
                     date = getDateInString(line);
                     heure = getHeureInString(line);
-                    nom = getNomPrenom(line,date,heure);
-                    currentStudent = Etudiant.getIndexNom(etudiants,nom);
+                    nomPrenom = getNomPrenom(line,date,heure);
 
-                    if(currentStudent == Integer.MAX_VALUE){
-                        etudiants.add(0,new Etudiant(nom));
-                        currentStudent = 0;
+                    //Retrouve l'étudiant puis l'affecte a currentEtudiant si il existe, sinon le créer puis l'affecte a currentEtudiant
+                    if((currentEtudiant = Etudiant.getEtudiantByNomPrenom(etudiants,nomPrenom)) == null){
+                        currentEtudiant = new Etudiant(nomPrenom);
+                        etudiants.add(currentEtudiant);
+                    }
+
+                    if((line = reader.readLine()) != null){
+                        System.out.println(line.toCharArray());
                     }
 
                     tentative = "";
                     while((line = reader.readLine()) != null && !isNewTentative(line)){
                         tentative = tentative + line;
                     }
-                    etudiants.get(currentStudent).addTentative(tentative,date , heure);
+
+                    //Insertion des tentatives dans la classe Etudiant correspondant
+                    currentEtudiant.addTentative(tentative, date , heure, testUnitaires, reussite);
 
                 }else {
                     line = reader.readLine();
                 }
             }
-
-
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -83,73 +75,17 @@ public class DataLoader {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         }
-
     }
 
 
-    public void loadFileReussites(File fileTentatives){
-        BufferedReader reader = null;
-        String line,date,heure,nom;
-        int currentStudent = 0;
-        int end = 0,i = 0,j=0;
-        String tentative;
-
-
-
-
-        try {
-
-            reader = new BufferedReader(new FileReader(fileTentatives));
-            line = reader.readLine();
-
-
-            while(line != null){
-                if(isNewTentative(line)){
-
-                    date = getDateInString(line);
-                    heure = getHeureInString(line);
-                    nom = getNomPrenom(line,date,heure);
-                    currentStudent = Etudiant.getIndexNom(etudiants,nom);
-
-                    if(currentStudent == Integer.MAX_VALUE){
-                        etudiants.add(0,new Etudiant(nom));
-                        currentStudent = 0;
-                    }
-
-                    tentative = "";
-                    while((line = reader.readLine()) != null && !isNewTentative(line)){
-                        tentative = tentative + line;
-                    }
-                    etudiants.get(currentStudent).addReussite(tentative,date , heure);
-
-                }else {
-                    line = reader.readLine();
-                }
-            }
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-
-    }
-
-    public void sortEtudiantsByDate(){
+    private void sortEtudiantsByDate(){
         for(int i = 0; i < etudiants.size();i++){
             etudiants.get(i).sortByDate();
         }
     }
 
-    public boolean isNewTentative(String line){
+    private boolean isNewTentative(String line){
         if(isValidDate(line) && isValidHeure(line)){
             return true;
         }
@@ -157,7 +93,7 @@ public class DataLoader {
     }
 
 
-    public boolean isValidDate(String line) {
+    private boolean isValidDate(String line) {
         if(line != null) {
             Pattern pattern = Pattern.compile(dateRegex, Pattern.DOTALL);
             Matcher matcher = pattern.matcher(line);
@@ -168,17 +104,28 @@ public class DataLoader {
     }
 
 
-    public String getDateInString(String line){
+    private String getDateInString(String line){
 
         if(line != null) {
             Pattern pattern = Pattern.compile(dateRegex, Pattern.DOTALL);
             Matcher matcher = pattern.matcher(line);
-            String heure,minute,seconde;
 
             if(matcher.find()) {
                 return matcher.group(1) + "-" + matcher.group(2) + "-" + matcher.group(3);
             }
         }
+        return null;
+    }
+
+    /**
+     *
+     *
+     * @param line
+     * @return
+     */
+    private Vector lineToVector(String line){
+        line.toCharArray();
+        System.out.println(line.toCharArray());
         return null;
     }
 
@@ -202,7 +149,6 @@ public class DataLoader {
         if(line != null) {
             Pattern pattern = Pattern.compile(heureRegex, Pattern.DOTALL);
             Matcher matcher = pattern.matcher(line);
-            String heure,minute,seconde;
 
             if(matcher.find()) {
                 return matcher.group(1) + ":" + matcher.group(2) + ":" + matcher.group(3);

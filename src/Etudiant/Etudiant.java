@@ -2,6 +2,7 @@ package Etudiant;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Vector;
 
 public class Etudiant {
     private String nomPrenom;
@@ -15,21 +16,22 @@ public class Etudiant {
     }
 
     /**
-     * return Integer.MAX_VALUE si le nom n'existe pas
+     * Retourne la classe etudiant correspondant au nomPrenom si il existe,
+     * retourne null sinon.
      *
      * @param etudiants
+     * @param nomPrenom
      * @return
      */
-    public static int getIndexNom(ArrayList<Etudiant> etudiants, String nomPrenom){
-        if(etudiants != null) {
-            for (int i = 0; i < etudiants.size(); i++) {;
+    public static Etudiant getEtudiantByNomPrenom(ArrayList<Etudiant> etudiants, String nomPrenom){
+        if(etudiants != null && nomPrenom != null && nomPrenom != "") {
+            for (int i = 0; i < etudiants.size(); i++) {
                 if (etudiants.get(i).getNomPrenom().contains(nomPrenom) || nomPrenom.contains(etudiants.get(i).getNomPrenom())) {
-                    return i;
+                    return etudiants.get(i);
                 }
             }
         }
-
-        return Integer.MAX_VALUE;
+        return null;
     }
 
     public static void printEtudiants(ArrayList<Etudiant> etudiants){
@@ -48,12 +50,8 @@ public class Etudiant {
     }
 
 
-    public void addTentative(String tentative,String date,String heure) {
-        this.tentatives.add(new Tentative(tentative,date,heure,false));
-    }
-
-    public void addReussite(String tentative,String date,String heure) {
-        this.tentatives.add(new Tentative(tentative,date,heure,true));
+    public void addTentative(String tentative,String date,String heure,Vector testUnitaires, boolean reussite) {
+        this.tentatives.add(new Tentative(tentative,date,heure, testUnitaires, reussite));
     }
 
     public ArrayList<Tentative> getTentatives() {

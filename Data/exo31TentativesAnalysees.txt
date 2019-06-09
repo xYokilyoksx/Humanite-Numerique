@@ -1,0 +1,4726 @@
+Alexis DUPRE 2019-02-06 11:56:52
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (mean(data[,"Classe"]))}
+Alexis DUPRE 2019-02-06 11:59:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (mean(table(data["Classe"])))}
+Alexis DUPRE 2019-02-06 12:00:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"]))}
+Alexis DUPRE 2019-02-06 12:02:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/ncol(data))}
+Alexis DUPRE 2019-02-06 12:02:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/ncol(data))}
+Alexis DUPRE 2019-02-06 12:04:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/ncol(data))}
+Alexis DUPRE 2019-02-06 12:06:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return (table(data["Classe"])/(ncol(data)))}
+Alexis DUPRE 2019-02-06 12:10:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return ((table(data["Classe"])/(ncol(data))))}
+Alexis DUPRE 2019-02-06 12:10:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return ((table(data["Classe"])/ncol(data)))}
+Alexis DUPRE 2019-02-07 12:01:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (mean(table(data["Classe"])))}
+Alexis DUPRE 2019-02-07 12:02:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/nrow(data))}
+Alexis DUPRE 2019-02-07 12:02:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/ncol(data))}
+Alexis DUPRE 2019-02-07 12:03:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(table(data["Classe"])/nrow(data)))}
+Alexis DUPRE 2019-02-07 12:10:24
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return ()}
+Alexis DUPRE 2019-02-07 12:13:49
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (data.table("-"=table(data["Classe"]["-"]/nrow(data)),"-"=table(data["Classe"]["+"]/nrow(data))))}
+Alexis DUPRE 2019-02-07 12:14:13
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table("-"=table(data["Classe"]["-"]/nrow(data)),"-"=table(data["Classe"]["+"]/nrow(data))))}
+Alexis DUPRE 2019-02-07 12:14:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table("-"=table(data["Classe"]["-"]/(nrow(data))),"-"=table(data["Classe"]["+"]/nrow(data))))}
+Alexis DUPRE 2019-02-08 20:43:24
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(classes[nrow])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:43:37
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[nrow])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:43:46
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,nrow])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:44:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,"Classe"])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:44:17
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe",])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:44:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[6])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:45:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data["Classe"])/nrow(table))}
+Alexis DUPRE 2019-02-08 20:45:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[6]))}
+Alexis DUPRE 2019-02-08 20:45:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,6]))}
+Alexis DUPRE 2019-02-08 20:45:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,5]))}
+Alexis DUPRE 2019-02-08 20:45:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[6,]))}
+Alexis DUPRE 2019-02-08 20:46:18
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,Classe]))}
+Alexis DUPRE 2019-02-08 20:46:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,"Classe"]))}
+Alexis DUPRE 2019-02-08 21:40:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ return (table(data[,ncol(data)]))}
+Alexis GREGOIRE 2019-02-07 15:19:04
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  data.table();
+}
+Alexis GREGOIRE 2019-02-07 15:29:32
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(data.table());
+}
+Alexis GREGOIRE 2019-02-07 15:29:34
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(data.table());
+}
+Alexis GREGOIRE 2019-02-07 15:29:37
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(data.table());
+}
+Alexis GREGOIRE 2019-02-07 15:30:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data));
+}
+Alexis GREGOIRE 2019-02-07 15:30:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data));
+}
+Alexis GREGOIRE 2019-02-07 15:32:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:32:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:32:31
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data.Classe));
+}
+Alexis GREGOIRE 2019-02-07 15:32:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:33:12
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data.Classes.mean()));
+}
+Alexis GREGOIRE 2019-02-07 15:35:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:38:07
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"])/data.length());
+}
+Alexis GREGOIRE 2019-02-07 15:39:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[6]));
+}
+Alexis GREGOIRE 2019-02-07 15:43:01
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,"Classes"]));
+}
+Alexis GREGOIRE 2019-02-07 15:43:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,"Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:43:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data["Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:47:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,"Classe"]));
+}
+Alexis GREGOIRE 2019-02-07 15:47:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,6]));
+}
+Alexis GREGOIRE 2019-02-07 15:47:56
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,5]));
+}
+Alexis GREGOIRE 2019-02-07 15:47:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,5]));
+}
+Alexis GREGOIRE 2019-02-07 15:48:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[6]));
+}
+Alexis GREGOIRE 2019-02-07 15:50:21
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data$Classe));
+}
+Alexis GREGOIRE 2019-02-07 15:54:26
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+
+  return(table(data$Classe));
+}
+Alexis GREGOIRE 2019-02-07 15:54:28
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+
+  return(table(data$Classe));
+}
+Alexis GREGOIRE 2019-02-11 13:17:10
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[.ncols(data)]))
+}
+Alexis GREGOIRE 2019-02-11 13:17:16
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,ncols(data)]))
+}
+Alexis GREGOIRE 2019-02-11 13:17:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[,ncol(data)]))
+}
+Alexis GREGOIRE 2019-02-11 13:17:32
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data[.ncol(data)]))
+}
+Amelie DAUVOIS 2019-02-07 19:17:17
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data$Classe) / length(data$Classe))
+}
+Amelie DAUVOIS 2019-02-07 19:21:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data["Classe"]) / nrow(data["Classe"]))
+}
+Amelie DAUVOIS 2019-02-07 19:21:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data["Classe"]) / nrow(data["Classe"]))
+}
+Amelie DAUVOIS 2019-02-07 19:47:53
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data["Classe"]) / nrow(data["Classe"]))
+}
+Amelie DAUVOIS 2019-02-09 09:47:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,"Classe"]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:48:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,6]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:50:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[6,]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:51:34
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,1]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:51:40
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,1]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:51:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:52:01
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,1]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:52:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,2]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:52:14
+1 1 1 1 1 0 0 0 0 1
+ probaClasses <- function(data) {
+	return(table(data[,3]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:52:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,4]) / nrow(data))
+}
+Amelie DAUVOIS 2019-02-09 09:52:48
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(names(data))
+}
+Amelie DAUVOIS 2019-02-09 09:53:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(names(data)))
+}
+Amelie DAUVOIS 2019-02-09 09:54:30
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(table(colnames(data)))
+}
+Amelie DAUVOIS 2019-02-09 09:54:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(table(colnames(data))[1:2])
+}
+Amelie DAUVOIS 2019-02-09 09:55:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(names(table(colnames(data)))[1:2])
+}
+Amelie DAUVOIS 2019-02-09 09:55:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(names(table(colnames(data))))
+}
+Amelie DAUVOIS 2019-02-09 09:55:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(names(table(colnames(data))))
+}
+Amelie DAUVOIS 2019-02-09 09:55:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(table(colnames(data)))
+}
+Amelie DAUVOIS 2019-02-09 09:55:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return(table(colnames(data[,1:2])))
+}
+Amelie DAUVOIS 2019-02-09 09:56:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+	return(table(data[,'classe']) / nrow(data))
+}
+Aurelien DESPREZ 2019-02-08 13:58:13
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return (table(data)[,ncol(data)]/nrow(data))
+}
+Aurelien DESPREZ 2019-02-08 13:58:15
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return (table(data)[,ncol(data)]/nrow(data))
+}
+Aurelien DESPREZ 2019-02-11 14:03:36
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return (table(data[,nclo(data)-1])/nrow(data))
+}
+Aurelien DESPREZ 2019-02-11 14:03:45
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)-1])/nrow(data))
+}
+Axel JEAN-FRANCOIS 2019-02-06 12:29:09
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+a <- data[Classe]
+}
+Baptiste GARRIDO 2019-02-10 22:43:11
+0 0 1 0 0 0 0 0 0 0
+ freq <- function(v,x){return(table(x)[v]);}
+Clement BOUTHIER 2019-02-08 13:59:15
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,6]=='-');
+	plus <- sum(data[,6]=='+');
+	return (c(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 14:03:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,6]=='-');
+	plus <- sum(data[,6]=='+');
+	return (table(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 14:05:33
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,6]=='-');
+	plus <- sum(data[,6]=='+');
+	return (c(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 14:06:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,6]=='-');
+	plus <- sum(data[,6]=='+');
+	return (table(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 14:06:56
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,ncol(data)]=='-');
+	plus <- sum(data[,ncol(data)]=='+');
+	return (table(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 14:11:57
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	moins <- sum(data[,ncol(data)]=='-');
+	plus <- sum(data[,ncol(data)]=='+');
+	return (c(moins/nrow(data),plus/nrow(data)))
+}
+Clement BOUTHIER 2019-02-08 15:59:54
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return (table(data)[1:2]/nrow(data))
+}
+Clement BOUTHIER 2019-02-08 16:00:56
+1 1 1 0 0 0 0 0 1 0
+ probaClasses <- function(data){
+	return (table(data)[1:3]/nrow(data))
+}
+Clement BOUTHIER 2019-02-08 16:01:23
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return (table(data)[1:2]/nrow(data))
+}
+Clement BOUTHIER 2019-02-08 16:03:19
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return (table(data)[,nrow(data)]/nrow(data))
+}
+Clement BOUTHIER 2019-02-08 16:03:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return (table(data)[,ncol(data)]/nrow(data))
+}
+Clement BOUTHIER 2019-02-08 16:04:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return (table(data)[,nrow(data)]/nrow(data));
+}
+Clement BOUTHIER 2019-02-08 16:17:24
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return (table(data)[,ncol(data)]/nrow(data));
+}
+Clement BOUTHIER 2019-02-08 16:18:59
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return ( (table(data)[,ncol(data)] ) / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:35:27
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:42:57
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULL)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:43:04
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULL)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:43:06
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULL)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:43:08
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULL)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:43:10
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULLl)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:43:14
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,dnn=NULL)[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:44:34
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,deparse.level = 0 )[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:44:38
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( table(data,deparse.level = 0 )[1:2 ] / nrow(data) )
+}
+Clement BOUTHIER 2019-02-08 17:54:45
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+	return ( (table(data)[1:2] / nrow(data)) )
+}
+Corentin HERVOCHON 2019-02-10 16:19:09
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-0;
+plus<-0;
+moins<-sum(x.Classe == '-');
+plus<-sum(x.Classe=='+');
+moins
+plus }
+
+Corentin HERVOCHON 2019-02-10 16:19:19
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-0;
+plus<-0;
+moins<-sum(Classe == '-');
+plus<-sum(Classe=='+');
+moins
+plus }
+
+Corentin HERVOCHON 2019-02-10 16:19:28
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-0;
+plus<-0;
+moins<-sum(Classe == '-');
+plus<-sum(Classe =='+');
+moins
+plus }
+
+Corentin HERVOCHON 2019-02-10 16:25:03
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-0;
+plus<-0;
+moins<-sum(Classe == '-');
+plus<-sum(Classe =='+');
+moins;
+plus ;
+}
+
+Corentin HERVOCHON 2019-02-10 16:28:27
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-sum(Classe == '-');
+plus<-sum(Classe =='+');
+moins;
+plus ;
+}
+
+Corentin HERVOCHON 2019-02-10 16:28:36
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(x){
+moins<-sum(x.Classe == '-');
+plus<-sum(Classe =='+');
+moins;
+plus ;
+}
+
+Corentin HERVOCHON 2019-02-11 21:32:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  total <- length(data) / 6
+  plus <- sum(data == '+') / total
+  moins <- sum(data == '-') / total
+  res <- table(moins,plus)
+}
+Damien MOLENAT 2019-02-07 15:24:02
+0 0 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  sapply(data,FUN=weighted.mean);
+}
+Damien MOLENAT 2019-02-07 15:24:26
+0 0 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  sapply(data,FUN=weighted.mean)
+}
+Damien MOLENAT 2019-02-07 15:24:39
+0 0 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  sapply(data,FUN=sum)
+}
+Damien MOLENAT 2019-02-07 15:28:58
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  
+}
+Damien MOLENAT 2019-02-07 15:30:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (data.table())
+}
+Damien MOLENAT 2019-02-07 15:30:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data))
+}
+Damien MOLENAT 2019-02-07 15:30:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data)[6])
+}
+Damien MOLENAT 2019-02-07 15:31:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1]))
+}
+Damien MOLENAT 2019-02-07 15:31:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:31:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:31:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:31:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:31:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:31:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:32:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return (table(data[1],data[2]))
+}
+Damien MOLENAT 2019-02-07 15:39:26
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- nbRows(data)
+  table(data)/x
+}
+Damien MOLENAT 2019-02-07 15:39:46
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- nbRow(data)
+  table(data)/x
+}
+Damien MOLENAT 2019-02-07 15:40:07
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- rows(data)
+  table(data)/x
+}
+Damien MOLENAT 2019-02-07 15:40:14
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(data)/x
+}
+Damien MOLENAT 2019-02-07 15:40:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(data)
+  
+}
+Damien MOLENAT 2019-02-07 15:41:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(x)
+  
+}
+Damien MOLENAT 2019-02-07 15:43:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  y <- col(data)
+  table(y)
+  
+}
+Damien MOLENAT 2019-02-07 15:44:09
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  y <- col(data)
+  table(y)/x
+  
+}
+Damien MOLENAT 2019-02-07 15:44:43
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  y <- col(data)
+  table(x)/x
+  
+}
+Damien MOLENAT 2019-02-07 15:49:20
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(data)/x
+}
+Damien MOLENAT 2019-02-07 15:49:36
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(data[0])/x
+}
+Damien MOLENAT 2019-02-07 15:55:23
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  x <- row(data)
+  table(data['Classe'])/x
+}
+Damien MOLENAT 2019-02-07 16:00:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  apply(table(data['Classe']),MARGIN=1,FUN=weighted.mean)
+}
+Edwin CHARLOTTE 2019-02-08 20:46:11
+0 0 1 0 0 0 0 0 0 0
+ probaClasse <- function(data){
+return (table(data[, ncols(data)] / ncols[data]))}
+Edwin CHARLOTTE 2019-02-08 20:46:23
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return (table(data[, ncols(data)] / ncols[data]))}
+Edwin CHARLOTTE 2019-02-08 20:46:40
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] / ncol[data]))}
+Edwin CHARLOTTE 2019-02-08 20:47:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] / ncol(data)))}
+Edwin CHARLOTTE 2019-02-08 20:47:28
+1 1 1 0 1 0 0 0 0 0
+ probaClasses <- function(data){
+return (table(data[, ncol(data)] ) / ncol(data))}
+Edwin CHARLOTTE 2019-02-10 16:58:53
+0 0 0 0 0 0 0 0 0 0
+ 
+Enseignant 2019-01-31 16:50:26
+0 0 0 0 0 0 0 0 0 0
+ return(0)
+Enseignant 2019-01-31 16:50:56
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(0)
+}
+Enseignant 2019-02-01 04:25:24
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(0)
+}
+Enseignant 2019-02-01 04:25:53
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(1)
+}
+Erik VIENNE 2019-02-08 12:34:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+p = c(table(data)['+'])/nrow(data)
+return (c(p, 1-p))
+}
+Erik VIENNE 2019-02-08 12:34:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+p = c(table(data)['+'])/nrow(data)
+return (c(1-p, p))
+}
+Erik VIENNE 2019-02-08 12:35:56
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+p = c(table(data)['+'])/nrow(data)
+return (matrix('-', 1-p, '+', p))
+}
+Erwan AUBRY 2019-02-07 14:34:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[,"Classe"]) / length(x)
+}
+
+Erwan AUBRY 2019-02-07 14:34:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[,"Classe"]) / length(x)
+}
+
+Erwan AUBRY 2019-02-07 14:49:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[,"Classe"]) / nrow(x)
+}
+Erwan AUBRY 2019-02-07 14:50:31
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x$Classe) / nrow(x)
+}
+Erwan AUBRY 2019-02-07 14:54:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[6]) / nrow(x)
+}
+Erwan AUBRY 2019-02-07 14:55:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[6]) / length(x)
+}
+Erwan AUBRY 2019-02-07 14:55:29
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[6]) / length(x)
+}
+Erwan AUBRY 2019-02-07 14:56:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    as.vector(table(x[6]) / nrow(x))
+}
+Erwan AUBRY 2019-02-07 14:56:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    as.table(table(x[6]) / nrow(x))
+}
+Erwan AUBRY 2019-02-07 14:58:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    sapply(table(x[6]) , function(v) v / nrow(x))
+}
+Erwan AUBRY 2019-02-07 14:59:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    table(x[6]) / nrow(x)
+}
+Erwan AUBRY 2019-02-07 15:11:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    tab = table(x[6])
+    val = (as.numeric(tab / nrow(x)))
+    val
+}
+Erwan AUBRY 2019-02-07 15:12:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    tab = table(x[6])
+    val = c(as.numeric(tab / nrow(x)))
+    val
+}
+Erwan AUBRY 2019-02-07 15:13:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(x) 
+{
+    tab = table(x[6])
+    val = tab / nrow(x)
+    val
+}
+Etienne FOUQUET 2019-02-11 18:08:08
+0 0 0 0 0 0 0 0 0 0
+ probaVecC <- function(vec,c,data){
+val<- sapply(c(1:length(vec)),FUN=function(i)probaAttValC(i,vec[i],c,data))
+return (prod(val))
+}
+Farnoud KHABOSHAN 2019-02-08 14:17:28
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+    table(data)[1:2]/nrow(data)
+}
+Farnoud KHABOSHAN 2019-02-08 14:17:37
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+    return (table(data)[1:2]/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 14:24:20
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data)[9,]/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 14:24:28
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data)[,6]/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 14:24:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data)[9]/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 14:24:39
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+    return (table(data)[1:2]/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 15:21:58
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data)[,ncol](data)/nrow(data))
+}
+Farnoud KHABOSHAN 2019-02-08 15:22:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data)[,col](data)/nrow(data))
+}
+Hugo GUERRIER 2019-02-10 16:30:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  return(table(data)/length(data))
+}
+Hugo GUERRIER 2019-02-10 16:32:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  return(table(data[,'Classe'])/length(data[, 'Classe']))
+}
+Hugo GUERRIER 2019-02-10 16:33:06
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  return(table(data[,Classe])/length(data[,Classe]))
+}
+Hugo GUERRIER 2019-02-10 16:35:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  return(table(data[,"Classe"])/length(data[,"Classe"]))
+}
+Hugo GUERRIER 2019-02-10 16:37:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data);
+
+}
+Hugo GUERRIER 2019-02-10 16:37:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data);
+
+}
+Hugo GUERRIER 2019-02-10 16:37:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,"Classe"]);
+  
+}
+Hugo GUERRIER 2019-02-10 16:38:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,6]);
+  
+}
+Hugo GUERRIER 2019-02-10 16:38:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,5]);
+  
+}
+Hugo GUERRIER 2019-02-10 16:39:02
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = data
+  
+}
+Hugo GUERRIER 2019-02-10 16:39:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data)
+  
+}
+Hugo GUERRIER 2019-02-10 16:39:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data)
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[1,1])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,1])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:19
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,1])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,2])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,2])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,2])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,3])
+  
+}
+Hugo GUERRIER 2019-02-10 16:41:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,4])
+  
+}
+Hugo GUERRIER 2019-02-10 16:42:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,3])
+  
+}
+Hugo GUERRIER 2019-02-10 16:44:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[6,])
+  
+}
+Hugo GUERRIER 2019-02-10 16:44:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[6,6])
+  
+}
+Hugo GUERRIER 2019-02-10 16:48:35
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[6,3])
+  
+}
+Hugo GUERRIER 2019-02-10 16:48:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,3])
+  
+}
+Hugo GUERRIER 2019-02-10 16:49:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,"Couleur"])
+  
+}
+Hugo GUERRIER 2019-02-10 16:50:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+  data_t = table(data[,"Hauteur"])
+  
+}
+Hugo GUERRIER 2019-02-10 16:52:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(f) {
+  data_t = table(f[,6])
+  
+}
+Hugo GUERRIER 2019-02-10 16:52:56
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(dat) {
+  data_t = table(dat[,6])
+  
+}
+Hugo GUERRIER 2019-02-10 16:52:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(dat) {
+  data_t = table(dat[,6])
+  
+}
+Hugo PAUTHIER 2019-02-09 11:26:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = table(data[ , "Classe"])
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:26:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = table(data[ , 'Classe'])
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:27:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = table(data[ , 5])
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:27:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = table(data[ , 6])
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:31:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = table(data[ , 'Classe'])
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:32:13
+0 0 0 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      t = data[ , 'Classe']
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:32:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:40:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:41:45
+0 0 0 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:42:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(plus, moins)
+}
+Hugo PAUTHIER 2019-02-09 11:42:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:44:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 2]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:44:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 1]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:44:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 0]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:44:51
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:45:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 3]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:46:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data['Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:46:16
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:46:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data['Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:48:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[,'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:48:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data['Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:48:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[6]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:49:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[(1:9), 6]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:49:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:50:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,6]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Hugo PAUTHIER 2019-02-09 11:53:48
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,6]
+
+}
+Hugo PAUTHIER 2019-02-09 11:53:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,6]
+      t = table(d)
+
+}
+Hugo PAUTHIER 2019-02-09 11:55:48
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+data
+}
+Hugo PAUTHIER 2019-02-09 11:56:49
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ 'Classe',]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 11:58:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,6]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 11:58:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,5]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 11:58:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,2]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 11:59:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,3]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 11:59:29
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ ,4]
+      t = table(d)
+}
+Hugo PAUTHIER 2019-02-09 16:57:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , 'Classe']
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+
+Hugo PAUTHIER 2019-02-11 20:53:45
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) {
+      d = data[ , ncol(data)]
+      t = table(d)
+      total = t['+'] + t['-']
+      plus = t['+'] / total
+      moins = t['-'] / total
+      res = c(moins, plus)
+}
+Jean EMPEREUR 2019-02-08 09:14:17
+0 0 0 0 0 0 0 0 0 0
+ 
+Jean EMPEREUR 2019-02-08 09:27:17
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  
+}
+Jean EMPEREUR 2019-02-08 09:27:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  a <- table(data)
+}
+Jean EMPEREUR 2019-02-08 09:27:52
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  a <- table()
+}
+Jean EMPEREUR 2019-02-08 09:57:11
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  plus <- length(data[data['Classe'] == '+' ]) / 2 / length(row(data[1]))
+  moins <- length(data[data['Classe'] == '-' ]) / 2 / length(row(data[1]))
+  res <- table(plus,moins)
+}
+Jean EMPEREUR 2019-02-08 10:21:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  total <- length(data) / 6
+  plus <- sum(data == '+') / total
+  moins <- sum (data == '-') / total
+  res <- table(moins,plus)
+}
+Jean EMPEREUR 2019-02-11 20:44:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+  total <- length(data) / 6
+  plus <- sum(data == '+') / total
+  moins <- sum (data == '-') / total
+  res <- table(moins,plus)
+}
+
+Jerome BIZOT 2019-02-09 14:56:44
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+classe <- data$Classe;
+res <- table(classe);
+}
+Jerome BIZOT 2019-02-09 14:58:30
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+classe <- data[,Classe];
+res <- table(classe);
+}
+Jerome BIZOT 2019-02-09 14:58:45
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+classe <- data[,"Classe"];
+res <- table(classe);
+}
+Jerome BIZOT 2019-02-09 14:59:07
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+classe <- data["Classe",];
+res <- table(classe);
+}
+Jordan LOPES 2019-02-09 13:15:15
+0 0 0 0 0 0 0 0 0 0
+ 
+Jordan LOPES 2019-02-09 13:15:24
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+}
+Jordan LOPES 2019-02-09 13:21:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	lignes = nrow(data);
+	plus = table(data["Classe"])["+"]
+	moins = table(data["Classe"])["-"]
+}
+Jordan LOPES 2019-02-09 13:22:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data["Classe"]);
+	return (freq/lignes);
+}
+Jordan LOPES 2019-02-09 13:36:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	freq <- table(data["Classe"]);
+	return (freq/ncol(data));
+}
+Jordan LOPES 2019-02-09 13:36:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	freq <- table(data["Classe"]);
+	return (freq/ncol(data));
+}
+Jordan LOPES 2019-02-09 13:36:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	freq <- table(data["Classe"]);
+	return (freq/ncol(data));
+}
+Jordan LOPES 2019-02-09 13:43:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data[, "Classe"]);
+	return(freq/lignes);
+}
+Jordan LOPES 2019-02-09 13:43:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+	lignes <- nrow(data);
+	freq <- table(data[, "Classe"]);
+	return(freq/lignes);
+}
+Ladislas WALCAK 2019-02-06 11:46:03
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- sum(data$Classes == '+') / nrow(data)
+moins <- sum(data$Classes == '-') / nrow(data)
+return (c(plus, moins)) }
+
+Ladislas WALCAK 2019-02-06 11:46:24
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- sum(data["Classes"] == '+') / nrow(data)
+moins <- sum(data["Classes"] == '-') / nrow(data)
+return (c(plus, moins)) }
+
+Ladislas WALCAK 2019-02-06 11:50:22
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(x)["+"] / nrow(data)
+moins <- table(x)["-"] / nrow(data)
+return (c(plus, moins)) }
+
+Ladislas WALCAK 2019-02-06 11:50:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data)["+"] / nrow(data)
+moins <- table(data)["-"] / nrow(data)
+return (c(plus, moins)) }
+
+Ladislas WALCAK 2019-02-06 11:52:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data)["+"] / nrow(data)
+moins <- table(data)["-"] / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:52:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data)["+"] / nrow(data)
+moins <- table(data)["-"] / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:52:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data)["+"] / nrow(data)
+moins <- table(data)["-"] / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:52:53
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data$Classe)["+"] / nrow(data)
+moins <- table(data$Classe)["-"] / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:53:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- table(data["Classe"])["+"] / nrow(data)
+moins <- table(data["Classe"])["-"] / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:57:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- (table(data["Classe"])["+"]) / nrow(data)
+moins <- (table(data["Classe"])["-"]) / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 11:58:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+plus <- (table(data["Classe"])["+"]) / nrow(data)
+moins <- (table(data["Classe"])["-"]) / nrow(data)
+ans <- c(moins, plus)
+names(ans) <- c("-", "+")
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:01:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"])
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:01:45
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"] / ncol(data))
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:01:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"]) / ncol(data)
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:03:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"])
+ans["-"] <- ans["-"] / ncol(data)
+ans["+"] <- ans["+"] / ncol(data)
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:04:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"])
+ans["-"] <- ans["-"] / ncol(data)
+ans["+"] <- ans["+"] / ncol(data)
+return (ans) }
+
+Ladislas WALCAK 2019-02-06 12:04:29
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+ans <- table(data["Classe"])
+
+return (ans) }
+
+Ladislas WALCAK 2019-02-08 20:20:46
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+moins <- table(data[,nrow(data)])["-"]
+plus <- table(data[,nrow(data)])["+"]
+return (table(plus, moins)) }
+Ladislas WALCAK 2019-02-08 20:21:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+moins <- table(data[,ncol(data)])["-"]
+plus <- table(data[,ncol(data)])["+"]
+return (table(plus, moins)) }
+Ladislas WALCAK 2019-02-08 20:21:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+moins <- table(data[,ncol(data)])["-"]
+plus <- table(data[,ncol(data)])["+"]
+return (c(plus, moins)) }
+Ladislas WALCAK 2019-02-08 20:21:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+moins <- table(data[,ncol(data)])["-"]
+plus <- table(data[,ncol(data)])["+"]
+return (c(plus, moins)) }
+Ladislas WALCAK 2019-02-08 20:22:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+moins <- table(data[,ncol(data)])["-"]
+plus <- table(data[,ncol(data)])["+"]
+return (table(plus, moins)) }
+Ladislas WALCAK 2019-02-08 20:24:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) {
+return (table(data[,ncol(data)])) }
+Liam DEMAREST 2019-02-10 11:54:57
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+cptMoins=0
+cptPlus=0
+for(elem in data[,6]){
+if(elem=="+"){
+cptPlus=cptPlus+1
+}
+else{
+cptMoins=cptMoins+1
+}
+}
+probaMoins<-cptMoins/nrow(data)
+probaPlus<-cptPlus/nrow(data)
+res<-c(probaMoins,probaPlus)
+return (res)
+}
+Liam DEMAREST 2019-02-10 12:04:30
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,6])[1]/nrow(data)
+probaPlus<-table(data[,6])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 12:04:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data)[1]/nrow(data)
+probaPlus<-table(data)[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 12:05:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,5])[1]/nrow(data)
+probaPlus<-table(data[,5])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 12:05:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data["Classe"])[1]/nrow(data)
+probaPlus<-table(data["Classe"])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 12:06:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data)[1]/nrow(data)
+probaPlus<-table(data)[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 12:06:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data)[1]/nrow(data)
+probaPlus<-table(data)[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:26:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,6])[1]/nrow(data)
+probaPlus<-table(data[,6])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:26:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data)[1]/nrow(data)
+probaPlus<-table(data)[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:28:53
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-c(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:30:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+res<-seq(table(data)[1]/nrow(data),table(data)[2]/nrow(data))
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:37:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,"Classe"])[1]/nrow(data)
+probaPlus<-table(data[,"Classe"])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:38:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,"Volve"])[1]/nrow(data)
+probaPlus<-table(data[,"Volve"])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:38:36
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,data.length])[1]/nrow(data)
+probaPlus<-table(data[,data.length])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:39:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:39:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:39:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:30
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:37
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:38
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:40
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:42
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:44
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:40:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:41:01
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:48:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[1,1]<-probaMoins
+r[1,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:48:58
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:49:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:49:04
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:49:06
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:49:08
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:50:41
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,0]<-probaMoins
+r[,1]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:50:49
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,2]<-probaMoins
+r[,3]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:51:00
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[1,]<-probaMoins
+r[2,]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:51:15
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+r[,1]<-probaMoins
+r[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:51:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,6]))
+colnames(res)<-r
+res[,1]<-probaMoins
+res[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:51:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-matrix(nrow=2,ncol=2)
+r<-rownames(table(data[,ncol(data)]))
+colnames(res)<-r
+res[,1]<-probaMoins
+res[,2]<-probaPlus
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:52:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,6])[1]/nrow(data)
+probaPlus<-table(data[,6])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:52:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 15:55:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 16:59:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,6])[1]/nrow(data)
+probaPlus<-table(data[,6])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:00:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:02:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:42:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins,probaPlus)
+return(prod(res))
+}
+Liam DEMAREST 2019-02-10 17:43:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:46:34
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins)
+res2<-as.table(probaPlus)
+return(res,res2)
+}
+Liam DEMAREST 2019-02-10 17:47:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins)
+res2<-as.table(probaPlus)
+res3<-c(res,res2)
+return(res3)
+}
+Liam DEMAREST 2019-02-10 17:47:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-(probaMoins)
+res2<-(probaPlus)
+res3<-as.table(res,res2)
+return(res3)
+}
+Liam DEMAREST 2019-02-10 17:47:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-as.table(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:53:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+res<-c(probaMoins,probaPlus)
+return(res)
+}
+Liam DEMAREST 2019-02-10 17:56:07
+1 1 1 1 1 1 1 1 0 0
+ probaClasses<-function(data){
+probaMoins<-table(data[,ncol(data)])[1]/nrow(data)
+probaPlus<-table(data[,ncol(data)])[2]/nrow(data)
+r<-c(probaMoins,probaPlus)
+res<-as.table(r)
+return(res)
+}
+Loris PERDEREAU 2019-02-11 21:37:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data)
+{
+  return( table(data[,"Classe"])/nrow(data) )
+}
+Loris PERDEREAU 2019-02-11 21:37:34
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data)
+{
+  return( table(data[,"Class"])/nrow(data) )
+}
+Loris PERDEREAU 2019-02-11 21:37:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data)
+{
+  return( table(data[,"Classe"])/nrow(data) )
+}
+Lucas GROSPART 2019-02-11 21:27:45
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    dataframe <- as.data.frame(table(data));
+    nbMoins <- dataframe[1,2];
+    nbPlus <- dataframe[2,2];
+    total <- nbPlus + nbMoins;
+    freqMoins <- nbMoins/total;
+    freqPlus <- nbPlus/total;
+    truc <- c("-"=freqMoins, "+"=freqPlus);
+    return(truc);
+}
+Lucas MANGIN 2019-02-08 17:54:03
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[,nrow(data)]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:54:15
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[,ncol(data)]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:55:21
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[1,2]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:56:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:56:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)/nrow(data)[2])  
+}
+
+Lucas MANGIN 2019-02-08 17:57:42
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[2,nrow(data)]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:57:54
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[,1:nrow(data)]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 17:58:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[,1:2]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 18:00:13
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(matrix(c("-",(sum(data[,6]=="-")/nrow(data)),"+",(sum(data[,6]=="+"))/nrow(data)),2,2))  
+}
+
+
+Lucas MANGIN 2019-02-08 18:03:23
+1 1 1 1 1 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[c("-","+")]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 18:13:27
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+  return(table(data)[data$Classe]/nrow(data))  
+}
+
+Lucas MANGIN 2019-02-08 18:48:07
+1 1 1 1 1 1 1 1 1 0
+ probaClasses<-function(data){
+  return(table(data)[unique(data[,ncol(data)])]/nrow(data))  
+}
+Lucas MIRLOUP 2019-02-10 21:28:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(mat){
+return(table(mat[,"Classe"])/nrow(mat))
+}
+Lucas MIRLOUP 2019-02-10 21:28:56
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(mat){
+return(table(mat[,"Classe"])/nrow(mat))
+}
+Lucas MIRLOUP 2019-02-10 21:30:29
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(mat){
+return(table(mat[,6])/nrow(mat))
+}
+Lucas MIRLOUP 2019-02-10 21:30:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(mat){
+return(table(mat[,5])/nrow(mat))
+}
+Lucas MIRLOUP 2019-02-10 21:31:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(mat[,6])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:31:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,6])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:31:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,"Classe"])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:44:21
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,"c"])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:44:32
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,'c'])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:47:43
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(){
+return(table(data[,'c'])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:48:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(){
+return(table(data[,"Classe"])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:48:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,"Classe"])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:49:24
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,1])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:49:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,2])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:49:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,2])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:49:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,6])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:50:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,4])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:50:12
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table(data[,1])/nrow(data))
+}
+Lucas MIRLOUP 2019-02-10 21:50:36
+1 1 1 1 0 0 0 0 0 0
+ probaClasses <- function(test){
+return(table(test[,1])/nrow(test))
+}
+Lucas MIRLOUP 2019-02-10 21:53:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(test){
+return(table(test[,4])/nrow(test))
+}
+Lucas MIRLOUP 2019-02-10 21:53:55
+1 1 1 1 1 0 0 0 0 1
+ probaClasses <- function(test){
+return(table(test[,3])/nrow(test))
+}
+Lucas MORET-BAILLY 2019-02-11 14:37:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data)
+{
+  return(table(data[,"Classe"])/nrow(data))
+}
+Lucas MORET-BAILLY 2019-02-11 15:34:29
+0 0 1 0 0 0 0 0 0 0
+ probaAttValC <- function(att, val, c, data){
+    b <- table(data[,ncol(data)])
+    p_classe <- b[names(b) == c]/nrow(data)
+    select <- data[data[,att] == val & data[,ncol(data)] == c,]
+    return(c(0, (nrow(select)/nrow(data))/p_classe))
+}
+Lucas MORET-BAILLY 2019-02-11 15:35:05
+0 0 1 0 0 0 0 0 0 0
+ probaAttValC <- function(att, val, c, data){
+    b <- table(data[,ncol(data)])
+    p_classe <- b[names(b) == c]/nrow(data)
+    select <- data[data[,att] == val & data[,ncol(data)] == c,]
+    return((nrow(select)/nrow(data))/p_classe)
+}
+Luka MERCIER 2019-02-11 22:34:16
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Luka MERCIER 2019-02-11 22:34:32
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(as.table(apply(table(factor(data[,ncol(data)])), MARGIN=2, FUN= function(x, data){x/nrow(data)}, data=data)))
+}
+Matthieu DE VUYST 2019-02-06 12:31:01
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(data['Classe'])}
+Matthieu DE VUYST 2019-02-06 12:31:40
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data['Classe'])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:31:51
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data[Classe])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:32:06
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data[,6])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:32:17
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data[6,])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:33:39
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data[6])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:34:01
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(sum(data['classe'])/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:40:27
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(50/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:40:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:41:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe']/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:42:10
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[Classe]/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:42:59
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(50/nrow(data))}
+Matthieu DE VUYST 2019-02-06 12:43:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data))}
+Matthieu DE VUYST 2019-02-06 12:44:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,6]))}
+Matthieu DE VUYST 2019-02-06 12:44:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,5]))}
+Matthieu DE VUYST 2019-02-06 12:45:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,2]))}
+Matthieu DE VUYST 2019-02-06 12:47:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data))}
+Matthieu DE VUYST 2019-02-06 12:50:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data)['Classe'])}
+Matthieu DE VUYST 2019-02-06 12:50:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe'])}
+Matthieu DE VUYST 2019-02-06 15:17:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe'])}
+Matthieu DE VUYST 2019-02-06 15:21:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe']/nrow(data))}
+Matthieu DE VUYST 2019-02-06 15:22:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe'])/nrow(data)}
+Matthieu DE VUYST 2019-02-08 08:36:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data['Classe']))}
+Matthieu DE VUYST 2019-02-08 08:38:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,6]))}
+Matthieu DE VUYST 2019-02-08 08:39:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,5]))}
+Matthieu DE VUYST 2019-02-08 08:39:17
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[Classe]))}
+Matthieu DE VUYST 2019-02-08 08:40:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data['Classe']))}
+Matthieu DE VUYST 2019-02-08 08:42:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data['Classe'][0]) ) }
+Matthieu DE VUYST 2019-02-08 08:45:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data) ) }
+Matthieu DE VUYST 2019-02-08 08:45:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe'] ) }
+Matthieu DE VUYST 2019-02-08 08:46:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[6] ) }
+Matthieu DE VUYST 2019-02-08 08:46:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[6] ) }
+Matthieu DE VUYST 2019-02-08 08:46:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[6]/nrow(data) ) }
+Matthieu DE VUYST 2019-02-08 08:56:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[6]/9 ) }
+Matthieu DE VUYST 2019-02-08 08:56:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[7]/9 ) }
+Matthieu DE VUYST 2019-02-08 08:56:24
+0 0 0 0 0 0 0 0 0 0
+ 
+Matthieu DE VUYST 2019-02-08 08:56:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[7]/9 ) }
+Matthieu DE VUYST 2019-02-08 08:56:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[5]/9 ) }
+Matthieu DE VUYST 2019-02-08 08:57:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)['Classe']/9 ) }
+Matthieu DE VUYST 2019-02-08 08:57:20
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[,6]/9 ) }
+Matthieu DE VUYST 2019-02-08 08:59:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)/9 ) }
+Matthieu DE VUYST 2019-02-08 08:59:45
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)/9[6] ) }
+Matthieu DE VUYST 2019-02-08 08:59:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)/9[6] ) }
+Matthieu DE VUYST 2019-02-08 09:00:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[6]/9 ) }
+Matthieu DE VUYST 2019-02-08 10:20:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[0:2])}
+Matthieu DE VUYST 2019-02-08 10:20:21
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){return(table(data)[0:2]/nrow(data))}
+Matthieu DE VUYST 2019-02-08 10:23:21
+1 1 1 0 0 0 0 0 1 0
+ probaClasses <- function(data){return(table(data)[0:3]/nrow(data))}
+Matthieu DE VUYST 2019-02-08 10:23:30
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){return(table(data)[0:2]/nrow(data))}
+Matthieu DE VUYST 2019-02-08 11:58:25
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){return(table(data)[0:2]/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:20:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,6])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:20:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data[,6])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:20:57
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data[,6])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:25:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data[ncol(data)])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:25:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data[ncol(data)+1])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:25:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){print(table(data[ncol(data)+1])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:31:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data)[0:ncol(data)]/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:32:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data['Classe'])/nrow(data))}
+Matthieu DE VUYST 2019-02-08 12:35:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){return(table(data[,'Classe'])/nrow(data))}
+Maxime LORNE 2019-02-11 21:47:56
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(apply(table(factor(data[,ncol(data)])), MARGIN=1, FUN= function(x, data){x/nrow(data)}, data=data))
+}
+Michael ABID 2019-02-07 12:09:52
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return (nrow(data))
+}
+Michael ABID 2019-02-07 12:10:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return (nrow(table(data)))
+}
+Michael ABID 2019-02-07 12:10:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return ((table(data)))
+}
+Michael ABID 2019-02-07 12:11:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-c(0.333333,0.6666667)
+return ((table(a)))
+}
+Michael ABID 2019-02-07 12:13:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+b<-c(1,1)
+a<-c(0.333333,0.6666667)
+return ((table(b,a)))
+}
+Michael ABID 2019-02-07 12:14:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-c(0.333333,0.6666667)
+return (table(a))
+}
+Michael ABID 2019-02-07 12:14:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-c(0.333333,0.6666667)
+return (names(table(a)))
+}
+Michael ABID 2019-02-09 16:14:58
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(c(sum(table(data)[,"Classe"]=="+")))
+}
+Michael ABID 2019-02-09 16:15:10
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(c(sum(table(data)[,6]=="+")))
+}
+Michael ABID 2019-02-09 16:15:19
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(c(sum(table(data)[,1]=="+")))
+}
+Michael ABID 2019-02-09 16:15:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(c(sum(table(data)[1]=="+")))
+}
+Michael ABID 2019-02-09 16:15:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(sum(table(data)[1]=="+")))
+}
+Michael ABID 2019-02-09 16:15:50
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(sum(table(data)[1]=="+")),0)
+}
+Michael ABID 2019-02-09 16:16:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(sum(table(data)[1]=="+"),0))
+}
+Michael ABID 2019-02-09 16:16:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(sum(table(data)[1]=="+"),0,0,0))
+}
+Michael ABID 2019-02-09 16:16:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(sum(table(data)[1]=="+"),0,0,0))
+}
+Michael ABID 2019-02-09 16:19:59
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(sum(table(data)[0:9,6]=="+"))
+}
+Michael ABID 2019-02-09 16:20:23
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(sum(table(data)[1:9,6]=="+"))
+}
+Michael ABID 2019-02-09 16:20:46
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data)[1:9,6]=="+")
+}
+Michael ABID 2019-02-09 16:20:49
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data)[1:9,6]=="+")
+}
+Michael ABID 2019-02-09 16:20:57
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data)[,6]=="+")
+}
+Michael ABID 2019-02-09 16:20:59
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data)[,6]=="+")
+}
+Michael ABID 2019-02-09 16:22:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data)[6]=="+")
+}
+Michael ABID 2019-02-09 16:22:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(sum(table(data)[6]=="+"))
+}
+Michael ABID 2019-02-09 16:39:22
+0 0 0 0 0 0 0 0 0 0
+ data
+Michael ABID 2019-02-09 16:39:24
+0 0 0 0 0 0 0 0 0 0
+ data
+Michael ABID 2019-02-09 16:40:05
+1 1 0 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return()
+}
+Michael ABID 2019-02-09 16:40:13
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table())
+}
+Michael ABID 2019-02-09 16:40:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(data))
+}
+Michael ABID 2019-02-09 16:41:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(length(table(data)),length(table(data)))
+}
+Michael ABID 2019-02-09 16:42:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(length(table(data)),length(table(data))))
+}
+Michael ABID 2019-02-09 16:42:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(length(table(data)),length(table(data)),0,0))
+}
+Michael ABID 2019-02-09 16:42:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(length(table(data)),length(table(data)),0,0))
+}
+Michael ABID 2019-02-09 16:42:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+return(table(length(table(data)),length(table(data))))
+}
+Michael ABID 2019-02-10 09:25:17
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-1
+b<-1
+c<-table(a,b)
+names(c,c("-","+"))
+return(c)}
+Michael ABID 2019-02-10 09:25:34
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-1
+b<-1
+c<-table(a,b)
+c.names(c("-","+"))
+return(c)}
+Michael ABID 2019-02-10 09:25:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-1
+b<-1
+c<-table(a,b)
+names(c("-","+"))
+return(c)}
+Michael ABID 2019-02-10 09:26:10
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-1
+b<-1
+c<-table(a,b)
+c.colnames(c("-","+"))
+return(c)}
+Michael ABID 2019-02-10 09:27:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+a<-1
+b<-1
+c<-table("-"=a,"+"=b)
+return(c)}
+Michael ABID 2019-02-10 09:33:29
+0 0 0 0 0 0 0 0 0 0
+ 
+Michael ABID 2019-02-10 09:33:37
+0 0 0 0 0 0 0 0 0 0
+ 
+Michael ABID 2019-02-10 09:33:39
+0 0 0 0 0 0 0 0 0 0
+ 
+Michael ABID 2019-02-10 09:33:41
+0 0 0 0 0 0 0 0 0 0
+ 
+Michael ABID 2019-02-10 09:33:42
+0 0 0 0 0 0 0 0 0 0
+ 
+Michael ABID 2019-02-10 09:33:44
+0 0 0 0 0 0 0 0 0 0
+ 
+Nelson RABOTTIN 2019-02-11 16:33:06
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data){
+	return (c((sum(data[,"Classe"]=="-")/length(data[,"Classe"])), (sum(data[,"Classe"]=="+")/length(data[,"Classe"]))))
+}
+Nelson RABOTTIN 2019-02-11 16:46:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+	return (c((table(data[,"Classe"])["-"])/length(data[,"Classe"]), (table(data[,"Classe"])["+"])/length(data[,"Classe"])))
+}
+Nelson RABOTTIN 2019-02-11 17:04:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+	return (c((table(data[,length(colnames(data))])["-"])/length(data[,length(colnames(data))]), (table(data[,length(colnames(data))])["+"])/length(data[,length(colnames(data))])))
+}
+Nicolas ZHOU 2019-02-07 19:47:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,"Classe"])/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:48:12
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data)/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:51:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,"classe"])/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:56:53
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,"Classe"])/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:58:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,6])/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:58:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,5])/length(data))
+}
+Nicolas ZHOU 2019-02-07 19:58:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,1])/length(data))
+}
+Nicolas ZHOU 2019-02-07 20:00:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,4])/length(data))
+}
+Nicolas ZHOU 2019-02-07 20:00:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,2])/length(data))
+}
+Nicolas ZHOU 2019-02-07 20:00:29
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,3])/length(data))
+}
+Nicolas ZHOU 2019-02-07 20:01:26
+1 1 1 1 1 0 0 0 0 1
+ probaClasses<-function(data){
+    return (table(data[,3])/length(data[,3]))
+}
+Nicolas ZHOU 2019-02-07 20:01:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,6])/length(data[,6]))
+}
+Nicolas ZHOU 2019-02-07 20:02:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,4])/length(data[,4]))
+}
+Nicolas ZHOU 2019-02-07 20:03:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,"Dessous"])/length(data[,"Dessous"]))
+}
+Nicolas ZHOU 2019-02-07 20:04:25
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,-1])/length(data[,-1]))
+}
+Nicolas ZHOU 2019-02-07 20:04:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,0])/length(data[,0]))
+}
+Nicolas ZHOU 2019-02-07 20:05:03
+0 0 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,7])/length(data[,7]))
+}
+Nicolas ZHOU 2019-02-07 20:05:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses<-function(data){
+    return (table(data[,4])/length(data[,4]))
+}
+Nicolas ZHOU 2019-02-08 07:42:12
+1 1 1 0 0 0 0 0 0 0
+ data <- matrix(c("grand", "moyen", "petit", "petit", "grand", "petit", "grand", "petit", "moyen", "blanc", "blanc", "marron", "noir", "blanc", "blanc", "blanc", "marron", "marron", "lamelles", "mousse", "lamelles", "lamelles", "mousse", "lamelles", "mousse", "mousse", "lamelles", "non", "non", "oui", "non", "non", "non", "oui", "oui", "non", "non", "non", "oui", "oui", "non", "non", "oui", "oui", "oui", "+", "+", "+", "+", "+", "+", "-", "-", "-"), nrow=9, ncol=6, byrow=FALSE)
+rownames(data) <- c(1,2,3,4,5,6,7,8,9)
+colnames(data) <- c("Hauteur", "Couleur", "Dessous", "Anneau", "Volve", "Classe")
+probaClasses<-function(data){
+    return (table(data[,"Classe"])/nrow(data))
+}
+Nicolas ZHOU 2019-02-08 07:42:45
+1 1 1 0 0 0 0 0 0 0
+ data <- matrix(c("grand", "moyen", "petit", "petit", "grand", "petit", "grand", "petit", "moyen", "blanc", "blanc", "marron", "noir", "blanc", "blanc", "blanc", "marron", "marron", "lamelles", "mousse", "lamelles", "lamelles", "mousse", "lamelles", "mousse", "mousse", "lamelles", "non", "non", "oui", "non", "non", "non", "oui", "oui", "non", "non", "non", "oui", "oui", "non", "non", "oui", "oui", "oui", "+", "+", "+", "+", "+", "+", "-", "-", "-"), nrow=9, ncol=6, byrow=FALSE)
+rownames(data) <- c(1,2,3,4,5,6,7,8,9)
+colnames(data) <- c("Hauteur", "Couleur", "Dessous", "Anneau", "Volve", "Classe")
+probaClasses<-function(data){
+    return (table(data["Classe"])/nrow(data))
+}
+Nicolas ZHOU 2019-02-08 07:43:14
+1 1 1 0 0 0 0 0 0 0
+ data <- matrix(c("grand", "moyen", "petit", "petit", "grand", "petit", "grand", "petit", "moyen", "blanc", "blanc", "marron", "noir", "blanc", "blanc", "blanc", "marron", "marron", "lamelles", "mousse", "lamelles", "lamelles", "mousse", "lamelles", "mousse", "mousse", "lamelles", "non", "non", "oui", "non", "non", "non", "oui", "oui", "non", "non", "non", "oui", "oui", "non", "non", "oui", "oui", "oui", "+", "+", "+", "+", "+", "+", "-", "-", "-"), nrow=9, ncol=6, byrow=FALSE)
+rownames(data) <- c(1,2,3,4,5,6,7,8,9)
+colnames(data) <- c("Hauteur", "Couleur", "Dessous", "Anneau", "Volve", "Classe")
+probaClasses<-function(data){
+    return (table(data[,6])/nrow(data))
+}
+
+data
+probaClasses(data)
+Pierre-Louis BERTRAND 2019-02-11 20:49:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    dataframe <- as.data.frame(table(data));
+    nbMoins <- dataframe[1,2];
+    nbPlus <- dataframe[2,2];
+    total <- nbPlus + nbMoins;
+    freqMoins <- nbMoins/total;
+    freqPlus <- nbPlus/total;
+    truc <- c(freqMoins, freqPlus);
+}
+Pierre-Louis BERTRAND 2019-02-11 21:24:53
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    dataframe <- as.data.frame(table(data));
+    nbMoins <- dataframe[1,2];
+    nbPlus <- dataframe[2,2];
+    total <- nbPlus + nbMoins;
+    freqMoins <- nbMoins/total;
+    freqPlus <- nbPlus/total;
+    truc <- c("-"=nbMoins/total, "+"=nbPlus/total);
+    return(truc);
+}
+Quentin BERNARD 2019-02-11 09:08:54
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     for (i in nrow(data)){
+         
+     }
+}
+Quentin BERNARD 2019-02-11 09:08:56
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     for (i in nrow(data)){
+         
+     }
+}
+Quentin BERNARD 2019-02-11 09:11:38
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data,"Classe") == '+'
+
+}
+Quentin BERNARD 2019-02-11 09:11:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data) == '+'
+
+}
+Quentin BERNARD 2019-02-11 09:14:34
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = data[,"Classe"]
+
+}
+Quentin BERNARD 2019-02-11 09:14:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,"Classe"] == '+')
+
+}
+Quentin BERNARD 2019-02-11 09:15:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,6] == '+')
+
+}
+Quentin BERNARD 2019-02-11 09:15:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,5] == '+')
+
+}
+Quentin BERNARD 2019-02-11 09:16:15
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,Classe] == '+')
+
+}
+Quentin BERNARD 2019-02-11 09:16:57
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,Classe] == '+')
+     pMoins = table(data[,Classe] =='-')
+
+}
+Quentin BERNARD 2019-02-11 09:17:03
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,'Classe'] == '+')
+     pMoins = table(data[,Classe] =='-')
+
+}
+Quentin BERNARD 2019-02-11 09:17:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     pPlus = table(data[,'Classe'] == '+')
+     pMoins = table(data[,'Classe'] =='-')
+
+}
+Quentin BERNARD 2019-02-11 09:18:55
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     mat <- matrix(data, nrow = 9, ncol = 6)
+     pPlus = table(mat[,9] == '+')
+     pMoins = table(data[,9] =='-')
+     return 
+
+}
+Quentin BERNARD 2019-02-11 09:19:12
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+     mat <- matrix(data, nrow = 9, ncol = 6)
+     pPlus = table(mat[,6] == '+')
+     pMoins = table(mat[,6] =='-')
+     return 
+
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:03
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:06
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:08
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:10
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:12
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:13
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,Classe]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-06 12:48:25
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classes <- data[,"Classe"]
+    tables(classes)
+    apply(tables(classes), FUN=moyenne,t=length(classes))
+}
+
+moyenne <- function(n,t){
+    n/t
+}
+Romain SIEGFRIEDT 2019-02-08 09:20:53
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classe <- data["Classe"]
+    apply(table(classe),FUN=moyenne,p=length(classe))
+}
+
+moyenne <- function(v,p){
+    v/p
+}
+Romain SIEGFRIEDT 2019-02-08 09:21:10
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    classe <- data["Classe"]
+    sapply(table(classe),FUN=moyenne,p=length(classe))
+}
+
+moyenne <- function(v,p){
+    v/p
+}
+Sosthene LEROY 2019-02-06 15:24:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe'])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 15:25:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(table(data['Classe'])/nrow(data)))
+}
+Sosthene LEROY 2019-02-06 15:25:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe'])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 15:25:53
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe'])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 15:26:53
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(adply(table(data['Classe'])/nrow(data)))
+}
+Sosthene LEROY 2019-02-06 15:27:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(as.table(table(data['Classe'])/nrow(data)))
+}
+Sosthene LEROY 2019-02-06 15:27:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe'])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 15:28:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(as.data.frame(table(data['Classe'])/nrow(data)))
+}
+Sosthene LEROY 2019-02-06 15:28:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe'])/nrow(data))
+}
+Sosthene LEROY 2019-02-06 15:28:41
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:29:04
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classes']))
+}
+Sosthene LEROY 2019-02-06 15:29:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classes']))
+}
+Sosthene LEROY 2019-02-06 15:29:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['classe']))
+}
+Sosthene LEROY 2019-02-06 15:29:55
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data.Classe))
+}
+Sosthene LEROY 2019-02-06 15:30:06
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data[Classe]))
+}
+Sosthene LEROY 2019-02-06 15:30:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data["Classe"]))
+}
+Sosthene LEROY 2019-02-06 15:32:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:32:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['classe']))
+}
+Sosthene LEROY 2019-02-06 15:32:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['classes']))
+}
+Sosthene LEROY 2019-02-06 15:32:44
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data))
+}
+Sosthene LEROY 2019-02-06 15:33:19
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Hauteur']))
+}
+Sosthene LEROY 2019-02-06 15:33:30
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['hauteur']))
+}
+Sosthene LEROY 2019-02-06 15:34:23
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:35:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:35:19
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:35:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:35:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:35:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    print(names(data))
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:36:12
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    stop(names(data))
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:36:47
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    stop("aaa")
+    return(table(data['Classe']))
+}
+Sosthene LEROY 2019-02-06 15:41:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data[]))
+}
+Sosthene LEROY 2019-02-06 15:42:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data[ncol(data)]))
+}
+Sosthene LEROY 2019-02-06 15:42:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    return(table(data[ncol(data)]))
+}
+Sosthene LEROY 2019-02-06 15:46:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = c(sum(data[ncol(data)]=='+'), sum(data[ncol(data)]=='-'))
+    return(table(data[ncol(data)]))
+}
+Sosthene LEROY 2019-02-06 15:46:14
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = c(sum(data[ncol(data)]=='+'), sum(data[ncol(data)]=='-'))
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:46:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:47:47
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:51:06
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:51:24
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:51:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas[1]+probas[2])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:06
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+']+probas['-'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:12
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:16
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:18
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:20
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:22
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:24
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:27
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:28
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:31
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:33
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:36
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:38
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:40
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:42
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:44
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:46
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:50
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:52
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:54
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:56
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:52:59
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:53:01
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:53:03
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:53:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas['+'])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:53:37
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:55:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:58:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:58:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:59:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])/nrow(data)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:59:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:59:29
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[ncol(data)])
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 15:59:55
+0 0 0 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = data[ncol(data)]
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 16:00:08
+0 0 0 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = data[,ncol(data)]
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 16:00:20
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[,ncol(data)])
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 16:00:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+    probas = table(data[,ncol(data)])/nrow(data)
+    stop(probas)
+    return(probas)
+}
+Sosthene LEROY 2019-02-06 18:22:57
+0 0 0 0 0 0 0 0 0 0
+ 
+Theodore GRASTEAU 2019-02-07 11:53:37
+0 0 0 0 0 0 0 0 0 0
+ probaClasse = function(data){
+ return(data)
+}
+Theodore GRASTEAU 2019-02-07 11:58:58
+1 1 0 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(data)
+}
+Theodore GRASTEAU 2019-02-07 11:59:19
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(data))
+}
+Theodore GRASTEAU 2019-02-07 11:59:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(data["Classe"]))
+}
+Theodore GRASTEAU 2019-02-07 12:00:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(matrix(data)["Classe"]))
+}
+Theodore GRASTEAU 2019-02-07 12:00:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(matrix(data)["Classe"]))
+}
+Theodore GRASTEAU 2019-02-07 12:00:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(matrix(data)["Classe"]))
+}
+Theodore GRASTEAU 2019-02-07 12:04:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return(table(data["Classe"]))
+}
+Theodore GRASTEAU 2019-02-07 12:06:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return( table(data["Classe"])/nrow(data["Classe"]) )
+}
+Theodore GRASTEAU 2019-02-07 12:11:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return( data.frame(table(data["Classe"])/nrow(data["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:15:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return( ftable(table(data["Classe"])/nrow(data["Classe"]) ) )
+}
+Theodore GRASTEAU 2019-02-07 12:15:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return( ftable(table(data["Classe"])/nrow(data["Classe"]) ) )
+}
+Theodore GRASTEAU 2019-02-07 12:19:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+ return( as.table(table(frame["c"])/nrow(frame["c"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:19:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+ return( as.table(table(frame["Classe"])/nrow(frame["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:19:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+ return( as.table(table(frame["Classe"])/nrow(frame["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:20:03
+0 0 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+retrun(2)
+ return( as.table(table(frame["Classe"])/nrow(frame["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:20:07
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+return(2)
+ return( as.table(table(frame["Classe"])/nrow(frame["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 12:20:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(frame){
+ return( as.table(table(frame["Classe"])/nrow(frame["Classe"])) )
+}
+Theodore GRASTEAU 2019-02-07 16:59:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return ( table(data["Classe"])/nrow(data["Classe"])  )
+}
+Theodore GRASTEAU 2019-02-07 17:00:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+ return ( as.table(table(data["Classe"])/nrow(data["Classe"]) ) )
+}
+Theodore GRASTEAU 2019-02-07 17:22:13
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+       res = table(data["Classe"]) / nrow(data["Classe"])
+       print(typeof(res))
+       return(res)
+}
+Theodore GRASTEAU 2019-02-07 17:25:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data){
+       res = table(data["Classe"]) / nrow(data["Classe"])
+       print(typeof(res))
+       return(as.table(res))
+}
+Tom RIBARDIERE 2019-02-06 16:58:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    moins <- table(data)['-']
+    plus <- table(data)['+']
+    return ( c(moins/nrow(data),plus/nrow(data) ))
+}
+Tom RIBARDIERE 2019-02-06 16:59:50
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    moins <- table(data)['-']
+    plus <- table(data)['+']
+    return (c(moins/nrow(data),plus/nrow(data)))
+}
+Tom RIBARDIERE 2019-02-06 17:06:14
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    moins <- table(data)['-']
+    plus <- table(data)['+']
+    matrice <- matrix(c(moins/nrow(data),(plus/nrow(data))),1,2)
+    colnames(matrice) <- c('-','+')
+    return (matrice)
+}
+Tom RIBARDIERE 2019-02-06 17:07:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    moins <- table(data)['-']
+    plus <- table(data)['+']
+    matrice <- matrix(c(moins/nrow(data),(plus/nrow(data))),1,2)
+    colnames(matrice) <- c('-','+')
+    return (matrice)
+}
+Tom RIBARDIERE 2019-02-06 17:55:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data['classe']))
+}
+Tom RIBARDIERE 2019-02-06 17:55:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data['classe']))
+}
+Tom RIBARDIERE 2019-02-06 17:57:40
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[,'classe']))
+}
+Tom RIBARDIERE 2019-02-06 17:58:11
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[,'Classe']))
+}
+Tom RIBARDIERE 2019-02-06 17:58:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data['Classe']))
+}
+Tom RIBARDIERE 2019-02-06 17:58:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[ ,'Classe']))
+}
+Tom RIBARDIERE 2019-02-06 18:00:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),'Classe']))
+}
+Tom RIBARDIERE 2019-02-06 18:00:31
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),'classe']))
+}
+Tom RIBARDIERE 2019-02-06 18:01:22
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),"classe"]))
+}
+Tom RIBARDIERE 2019-02-06 18:01:26
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),"classe"]))
+}
+Tom RIBARDIERE 2019-02-06 18:01:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),"Classe"]))
+}
+Tom RIBARDIERE 2019-02-06 18:03:33
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return (table(data[1:nrow(data),"classe"]))
+}
+Tom RIBARDIERE 2019-02-06 18:04:58
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[1:nrow(data),"classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:05:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[1:nrow(data),"Classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:05:58
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[,"classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:06:15
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[,"Hauteur"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:06:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[,6])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:07:02
+1 1 1 1 1 1 1 1 0 0
+ probaClasses <- function(data){
+    table <- table(data[,ncol(data)])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:09:02
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[,"classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:40:52
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[1:nrow(data),"classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:41:08
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    table <- table(data[,"classe"])
+    table['-'] <- table['-']/nrow(data)
+    table['+'] <- table['+']/nrow(data)
+    return(table)
+}
+Tom RIBARDIERE 2019-02-06 18:43:06
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    tableRes <- table(data[,"classe"])
+    tableRes['-'] <- tableRes['-']/nrow(data)
+    tableRes['+'] <- tableRes['+']/nrow(data)
+    return(tableRes)
+}
+Tom RIBARDIERE 2019-02-06 18:43:32
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    tableRes <- table(data[,"dessous"])
+    tableRes['-'] <- tableRes['-']/nrow(data)
+    tableRes['+'] <- tableRes['+']/nrow(data)
+    return(tableRes)
+}
+Tom RIBARDIERE 2019-02-06 18:43:45
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    tableRes <- table(data[,'dessous'])
+    tableRes['-'] <- tableRes['-']/nrow(data)
+    tableRes['+'] <- tableRes['+']/nrow(data)
+    return(tableRes)
+}
+Tom RIBARDIERE 2019-02-06 18:43:48
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    tableRes <- table(data[,'dessous'])
+    tableRes['-'] <- tableRes['-']/nrow(data)
+    tableRes['+'] <- tableRes['+']/nrow(data)
+    return(tableRes)
+}
+Tom RIBARDIERE 2019-02-06 18:43:57
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    tableRes <- table(data[,'classe'])
+    tableRes['-'] <- tableRes['-']/nrow(data)
+    tableRes['+'] <- tableRes['+']/nrow(data)
+    return(tableRes)
+}
+Tom RIBARDIERE 2019-02-07 10:56:09
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data)['-'] )}
+Tom RIBARDIERE 2019-02-07 10:56:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data['classe']) )}
+Tom RIBARDIERE 2019-02-07 10:57:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data['Classe']) )
+}
+Tom RIBARDIERE 2019-02-07 10:57:34
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data[,'Classe']) )
+}
+Tom RIBARDIERE 2019-02-07 10:57:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data['Classe']) )
+}
+Tom RIBARDIERE 2019-02-07 10:57:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  table(data['classe']) )
+}
+Tom RIBARDIERE 2019-02-07 11:00:19
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){ 
+return(  data['classe'] )
+}
+Tom RIBARDIERE 2019-02-07 11:59:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+classe <- data['classe']
+return(table(classe))
+}
+Tom RIBARDIERE 2019-02-07 11:59:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+classe <- data['Classe']
+return(table(classe))
+}
+Tom RIBARDIERE 2019-02-07 12:15:02
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( table(data["Classe"])/nrow(data))
+}
+Tom RIBARDIERE 2019-02-07 12:16:27
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:31
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:33
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:35
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:37
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:40
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:43
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-07 12:16:45
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return ( prop.table(table(data["Classe"])) )
+}
+Tom RIBARDIERE 2019-02-08 11:59:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return( table( data[,nrow(data)])/nrow(data) )
+}
+Tom RIBARDIERE 2019-02-08 12:00:58
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return( table( data[,'Classe'])/nrow(data) )
+}
+Tom RIBARDIERE 2019-02-08 12:33:33
+0 0 0 0 0 0 0 0 0 0
+ probaAttValC <- function(att,val,c,data){
+    numRow <- nrow(data)
+    propor <- nrow(subset(data, data[,att]==val & data[,nrow(data)]==c)/numRow)
+    proporBasse <- nrow(subset(data, data[,nrow(data)]==c)/numRow)
+    return( propor/proporBasse)
+}
+
+Yani FERHAOUI 2019-02-10 18:17:55
+1 1 1 0 0 0 0 0 0 0
+ probaClasses = function(data) { 
+return(table(data[,'Classe'])/length(data[, 'Classe'])) 
+}
+Yani FERHAOUI 2019-02-10 18:18:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+return(table(data[,'Classe'])/length(data[, 'Classe'])) 
+}
+Yani FERHAOUI 2019-02-10 18:18:36
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+return(table(data[,"Classe"])/length(data[, 'Classe'])) 
+}
+Yani FERHAOUI 2019-02-10 18:19:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+res <- (table(data[,"Classe"])/length(data[, 'Classe'])) 
+res
+}
+Yani FERHAOUI 2019-02-10 18:19:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+res <- (table(data[,"Classe"])/length(data[, 'Classe'])) 
+res
+}
+Yani FERHAOUI 2019-02-10 18:20:20
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+res <- (table(data[,'Classe'])/length(data[, 'Classe'])) 
+res
+}
+Yani FERHAOUI 2019-02-10 18:24:35
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+res <- (table(data[,Classe])/length(data[, Classe])) 
+res
+}
+Yani FERHAOUI 2019-02-10 18:24:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data) { 
+res <- (table(data[,'Classe'])/length(data[, 'Classe'])) 
+res
+}
+Yuyari SALAS 2019-02-08 11:02:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(rownames(table(data)));
+};
+Yuyari SALAS 2019-02-08 11:05:55
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(dat[, 5]);
+};
+Yuyari SALAS 2019-02-08 11:07:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, 5],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:08:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, 1],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:05
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, "Classe"],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:16
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, 5],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, 6],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[, 7],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(dat[1,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:09:54
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[1,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:01
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[0,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:03
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[0,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:08
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[1,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[3,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:26
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[3,],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:35
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[,6],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:42
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[,5],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:10:46
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[,5],dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:11:22
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data[1,], dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:11:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(1, dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:11:49
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(10, dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:12:00
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return(table(data, dnn = "Observations per diet"));
+};
+Yuyari SALAS 2019-02-08 11:18:35
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return( table( 1, 2, dnn = c("-", "+") ) );
+};
+Yuyari SALAS 2019-02-08 11:18:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return( table( 0.3333333, 0.6666667, dnn = c("-", "+") ) );
+};
+Yuyari SALAS 2019-02-08 11:18:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return( table( 0.3333333, 0.6666667, dnn = c("-", "+") ) );
+};
+Yuyari SALAS 2019-02-08 11:21:18
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+    return( table( dnn = c("-", "+") ) );
+};
+Yuyari SALAS 2019-02-08 11:45:19
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return( table(data) );
+};
+Yuyari SALAS 2019-02-08 11:47:08
+1 1 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return( data );
+};
+Yuyari SALAS 2019-02-08 11:47:21
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+x <- table(data)
+return( data );
+};
+Yuyari SALAS 2019-02-08 12:41:10
+0 0 0 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table[,5]);
+};
+Yuyari SALAS 2019-02-08 12:41:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,5]) );
+};
+Yuyari SALAS 2019-02-08 12:41:51
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,"Classe"]) );
+};
+Yuyari SALAS 2019-02-08 12:42:05
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,Classe]) );
+};
+Yuyari SALAS 2019-02-08 12:42:17
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,6]) );
+};
+Yuyari SALAS 2019-02-08 12:42:24
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,5]) );
+};
+Yuyari SALAS 2019-02-08 12:42:28
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,5]) );
+};
+Yuyari SALAS 2019-02-08 12:42:38
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data) );
+};
+Yuyari SALAS 2019-02-08 12:42:48
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+print(data);
+return(table( data) );
+};
+Yuyari SALAS 2019-02-08 12:44:32
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,6]) );
+};
+Yuyari SALAS 2019-02-08 12:44:52
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[,4]) );
+};
+Yuyari SALAS 2019-02-08 12:44:59
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data[6,]) );
+};
+Yuyari SALAS 2019-02-08 12:51:36
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data$Classe) );
+};
+Yuyari SALAS 2019-02-08 12:51:47
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+return(table( data.Classe) );
+};
+Yuyari SALAS 2019-02-08 13:11:24
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+nbPlus <- table(data$Classe)[['+']]
+nbMoins <- table(data$Classe)[['-']]
+
+plusCalc <- nbPlus/(nbPlus+nbMoins)
+moinsCalc <- nbMois(nbPlus+nbMoins)
+
+return( c(plusCalc, moinsCalc) );
+};
+Yuyari SALAS 2019-02-08 13:11:30
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+nbPlus <- table(data$Classe)[['+']]
+nbMoins <- table(data$Classe)[['-']]
+
+plusCalc <- nbPlus/(nbPlus+nbMoins);
+moinsCalc <- nbMois(nbPlus+nbMoins);
+
+return( c(plusCalc, moinsCalc) );
+};
+Yuyari SALAS 2019-02-08 13:14:41
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+nbPlus <- table(data[Classe])[['+']]
+nbMoins <- table(data[Classe])[['-']]
+
+plusCalc <- nbPlus/(nbPlus+nbMoins);
+moinsCalc <- nbMois(nbPlus+nbMoins);
+
+return( apply(, FUN=factorial) );
+};
+Yuyari SALAS 2019-02-08 13:14:55
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+nbPlus <- table(data['Classe'])[['+']]
+nbMoins <- table(data['Classe'])[['-']]
+
+plusCalc <- nbPlus/(nbPlus+nbMoins);
+moinsCalc <- nbMois(nbPlus+nbMoins);
+
+return( apply(, FUN=factorial) );
+};
+Yuyari SALAS 2019-02-08 13:16:11
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+x <- table(data['Classe'])
+
+return( apply(x, FUN=factorial) );
+};
+Yuyari SALAS 2019-02-08 13:16:18
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+x <- table(data['Classe'])
+
+return( sapply(x, FUN=factorial) );
+};
+Yuyari SALAS 2019-02-08 13:23:59
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+F <- function(x){ x/9 }
+T <- table(data['Classe'])
+apply(T,F)
+
+return( T );
+};
+Yuyari SALAS 2019-02-08 13:24:18
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+F <- function(x){ x/9 }
+T <- table(data['Classe'])
+apply(T,2,F)
+
+return( T );
+};
+Yuyari SALAS 2019-02-08 13:24:30
+0 0 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+F <- function(x){ x/9 }
+T <- table(data['Classe'])
+apply(T,FUN=F)
+
+return( T );
+};
+Yuyari SALAS 2019-02-08 13:24:39
+1 1 1 0 0 0 0 0 0 0
+ probaClasses <- function(data){
+
+F <- function(x){ x/9 }
+T <- table(data['Classe'])
+sapply(T,FUN=F)
+
+return( T );
+};
+

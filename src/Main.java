@@ -15,24 +15,20 @@ import javax.swing.*;
 public class Main {
     public static void main (String[] args){
 
-
-
-        File fileTentatives = new File("Data\\exo31Tentatives.txt");
+        File fileTentatives = new File("Data\\exo31TentativesAnalysees.txt");
         File fileReussites = new File("Data\\exo31Reussites.txt");
         DataLoader n = new DataLoader(fileTentatives,fileReussites);
-
+/*
         Chart chart = new Chart("nbCar / nbTentatives","nbCar / nbTentatives",n.getEtudiants());
         chart.pack( );
         RefineryUtilities.centerFrameOnScreen( chart );
         chart.setVisible( true );
-
-
 
             TimeChart example = new TimeChart("nbCar / date",n.getEtudiants());
             example.setSize(800, 400);
             example.setLocationRelativeTo(null);
             example.setVisible(true);
             example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        System.out.println("test");
+*/
     }
 }
